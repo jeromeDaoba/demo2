@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        bat(script: 'mvn clean install -Dmaven.test.skip=true', returnStatus: true, returnStdout: true)
+        bat 'mvn clean install -Dmaven.test.skip=true'
       }
     }
   }
