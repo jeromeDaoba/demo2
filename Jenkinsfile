@@ -13,6 +13,11 @@ pipeline {
             echo 'echo "message"'
           }
         }
+        stage('') {
+          steps {
+            emailext(subject: 'test@test.com', body: 'test', from: 'test@test.com')
+          }
+        }
       }
     }
   }
