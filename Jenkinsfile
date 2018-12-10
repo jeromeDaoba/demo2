@@ -15,7 +15,7 @@ pipeline {
         }
         stage('') {
           steps {
-            emailext(subject: 'test@test.com', body: 'test', from: 'test@test.com')
+            fileExists '65454'
           }
         }
       }
