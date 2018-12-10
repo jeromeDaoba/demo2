@@ -8,14 +8,9 @@ pipeline {
             bat 'mvn clean install -Dmaven.test.skip=true'
           }
         }
-        stage('') {
+        stage('error') {
           steps {
             echo 'echo "message"'
-          }
-        }
-        stage('') {
-          steps {
-            sh 'sh "mvn -version"'
           }
         }
       }
